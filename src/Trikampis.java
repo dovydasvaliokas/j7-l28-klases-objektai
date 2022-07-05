@@ -17,7 +17,7 @@ public class Trikampis {
             this.krastine3 = krastine3;
         }
         else {
-            System.out.println("Su tokiomis kraštinėmis trikampio sukurti negalima. Buvo sukurtas TUŠČIAS trikampis vietoj to.");
+            System.out.println("Su tokiomis kraštinėmis(" + krastine1 + ", " + krastine2 + ", " + krastine3 +") trikampio sukurti negalima. Buvo sukurtas TUŠČIAS trikampis vietoj to.");
         }
 
     }
