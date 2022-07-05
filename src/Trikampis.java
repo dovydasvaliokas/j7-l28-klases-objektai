@@ -28,6 +28,45 @@ public class Trikampis {
     }
 
 
+    public int perimetras() {
+        return krastine1 + krastine2 + krastine3;
+    }
+
+    // -----getteriai setteriai
+    public int getKrastine1()
+    {
+        return krastine1;
+    }
+
+    public void setKrastine1(int krastine1)
+    {
+        if (arGalimaSukurtiTrikampi(krastine1, krastine2, krastine3)) {
+
+        }
+        this.krastine1 = krastine1;
+    }
+
+    public int getKrastine2()
+    {
+        return krastine2;
+    }
+
+    public void setKrastine2(int krastine2)
+    {
+        this.krastine2 = krastine2;
+    }
+
+    public int getKrastine3()
+    {
+        return krastine3;
+    }
+
+    public void setKrastine3(int krastine3)
+    {
+        this.krastine3 = krastine3;
+    }
+
+
     // toString() metodas
 
     @Override

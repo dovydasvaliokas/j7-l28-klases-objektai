@@ -25,6 +25,16 @@ public class PagrindinePrograma {
         System.out.println("t1 = " + t1);
         System.out.println("t2 = " + t2);
 
+
+        // To trikampio, kurio nesukūrė, tai į jį įdedu su setteriu naujas kraštines
+        t2.setKrastine1(5);
+        t2.setKrastine2(8);
+        t2.setKrastine3(10);
+
+        isvedaBruksniukus();
+        System.out.println("t1.perimetras() = " + t1.perimetras());
+        System.out.println("t2.perimetras() = " + t2.perimetras());
+
     }
 
 
