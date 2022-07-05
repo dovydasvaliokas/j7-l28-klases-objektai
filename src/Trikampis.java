@@ -32,7 +32,13 @@ public class Trikampis {
         return krastine1 + krastine2 + krastine3;
     }
 
-    // -----getteriai setteriai
+    public double plotas() {
+        double p = perimetras() / 2;
+        return Math.sqrt(p * (p - krastine1) * (p - krastine2) * (p - krastine3));
+    }
+
+
+    //------------------------- -----getteriai setteriai
     public int getKrastine1()
     {
         return krastine1;
