@@ -15,7 +15,13 @@ public class Staciakampis {
     }
 
     // Klasės metodai
+    public double plotas() {
+        return ilgis * plotis;
+    }
 
+    public double perimetras() {
+        return ilgis + plotis + ilgis + plotis;
+    }
 
     // Getteriai setteriai
     public double getIlgis() {
