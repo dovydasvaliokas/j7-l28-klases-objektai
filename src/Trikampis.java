@@ -41,9 +41,11 @@ public class Trikampis {
     public void setKrastine1(int krastine1)
     {
         if (arGalimaSukurtiTrikampi(krastine1, krastine2, krastine3)) {
-
+            this.krastine1 = krastine1;
         }
-        this.krastine1 = krastine1;
+        else {
+            System.out.println("Negalima keisti kraštinės į " + krastine1 + ", nes nesusidarys trikampis. Liko nepakeista.");
+        }
     }
 
     public int getKrastine2()
@@ -53,7 +55,12 @@ public class Trikampis {
 
     public void setKrastine2(int krastine2)
     {
-        this.krastine2 = krastine2;
+        if (arGalimaSukurtiTrikampi(krastine1, krastine2, krastine3)) {
+            this.krastine2 = krastine2;
+        }
+        else {
+            System.out.println("Negalima keisti kraštinės į " + krastine2 + ", nes nesusidarys trikampis. Liko nepakeista.");
+        }
     }
 
     public int getKrastine3()
@@ -63,7 +70,12 @@ public class Trikampis {
 
     public void setKrastine3(int krastine3)
     {
-        this.krastine3 = krastine3;
+        if (arGalimaSukurtiTrikampi(krastine1, krastine2, krastine3)) {
+            this.krastine3 = krastine3;
+        }
+        else {
+            System.out.println("Negalima keisti kraštinės į " + krastine3 + ", nes nesusidarys trikampis. Liko nepakeista.");
+        }
     }
 
 
