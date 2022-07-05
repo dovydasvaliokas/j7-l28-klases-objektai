@@ -9,13 +9,28 @@ public class PagrindinePrograma {
 
         System.out.println("st1 = " + st1);
 
+        isvedaBruksniukus();
+
         Staciakampis st2 = new Staciakampis(6.27, 3.19);
 
         System.out.println("st1.plotas() = " + st1.plotas());
         System.out.println("st2.plotas() = " + st2.plotas());
         isvedaKurisDidesnisPlotas(st1, st2);
+
+
+        //----------------------------Trikampio pvz------------------
+        isvedaBruksniukus();
+        Trikampis t1 = new Trikampis(6, 6, 8);
+        Trikampis t2 = new Trikampis(2, 2, 40);
+        System.out.println("t1 = " + t1);
+        System.out.println("t2 = " + t2);
+
     }
 
+
+    public static void isvedaBruksniukus() {
+        System.out.println("--------------------------------------");
+    }
 
     public static void isvedaKurisDidesnisPlotas(Staciakampis st1, Staciakampis st2) {
         if (st1.plotas() > st2.plotas()) {

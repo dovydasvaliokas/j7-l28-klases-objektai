@@ -24,6 +24,18 @@ public class Trikampis {
 
     // Klasės metodai
     public static boolean arGalimaSukurtiTrikampi(int k1, int k2, int k3) {
-        return k1 + k2 < k3 && k1 + k3 < k2 && k2 + k3 < k1;
+        return k1 + k2 > k3 && k1 + k3 > k2 && k2 + k3 > k1;
+    }
+
+
+    // toString() metodas
+
+    @Override
+    public String toString() {
+        return "Trikampis{" +
+                "krastine1=" + krastine1 +
+                ", krastine2=" + krastine2 +
+                ", krastine3=" + krastine3 +
+                '}';
     }
 }
