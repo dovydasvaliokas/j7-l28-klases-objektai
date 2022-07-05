@@ -34,7 +34,6 @@ public class PagrindinePrograma {
         System.out.println("t2.perimetras() = " + t2.perimetras());
 
 
-
         isvedaBruksniukus();
         t2.setKrastine2(25);        // šito turėtų neleisti, nes nesusidarys trikampis
         t2.setKrastine3(7);         // šitą turėtų pakeisti, nes trikampis išliks
@@ -54,11 +53,9 @@ public class PagrindinePrograma {
     public static void isvedaKurisDidesnisPlotas(Staciakampis st1, Staciakampis st2) {
         if (st1.plotas() > st2.plotas()) {
             System.out.println("Pirmas didesnis");
-        }
-        else if (st1.plotas() < st2.plotas()) {
+        } else if (st1.plotas() < st2.plotas()) {
             System.out.println("Antras didesnis");
-        }
-        else {
+        } else {
             System.out.println("Abu vienodi");
         }
     }

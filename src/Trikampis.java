@@ -15,9 +15,8 @@ public class Trikampis {
             this.krastine1 = krastine1;
             this.krastine2 = krastine2;
             this.krastine3 = krastine3;
-        }
-        else {
-            System.out.println("Su tokiomis kraštinėmis(" + krastine1 + ", " + krastine2 + ", " + krastine3 +") trikampio sukurti negalima. Buvo sukurtas TUŠČIAS trikampis vietoj to.");
+        } else {
+            System.out.println("Su tokiomis kraštinėmis(" + krastine1 + ", " + krastine2 + ", " + krastine3 + ") trikampio sukurti negalima. Buvo sukurtas TUŠČIAS trikampis vietoj to.");
         }
 
     }
@@ -39,47 +38,38 @@ public class Trikampis {
 
 
     //------------------------- -----getteriai setteriai
-    public int getKrastine1()
-    {
+    public int getKrastine1() {
         return krastine1;
     }
 
-    public void setKrastine1(int krastine1)
-    {
+    public void setKrastine1(int krastine1) {
         if (arGalimaSukurtiTrikampi(krastine1, krastine2, krastine3)) {
             this.krastine1 = krastine1;
-        }
-        else {
+        } else {
             System.out.println("Negalima keisti kraštinės į " + krastine1 + ", nes nesusidarys trikampis. Liko nepakeista.");
         }
     }
 
-    public int getKrastine2()
-    {
+    public int getKrastine2() {
         return krastine2;
     }
 
-    public void setKrastine2(int krastine2)
-    {
+    public void setKrastine2(int krastine2) {
         if (arGalimaSukurtiTrikampi(krastine1, krastine2, krastine3)) {
             this.krastine2 = krastine2;
-        }
-        else {
+        } else {
             System.out.println("Negalima keisti kraštinės į " + krastine2 + ", nes nesusidarys trikampis. Liko nepakeista.");
         }
     }
 
-    public int getKrastine3()
-    {
+    public int getKrastine3() {
         return krastine3;
     }
 
-    public void setKrastine3(int krastine3)
-    {
+    public void setKrastine3(int krastine3) {
         if (arGalimaSukurtiTrikampi(krastine1, krastine2, krastine3)) {
             this.krastine3 = krastine3;
-        }
-        else {
+        } else {
             System.out.println("Negalima keisti kraštinės į " + krastine3 + ", nes nesusidarys trikampis. Liko nepakeista.");
         }
     }
