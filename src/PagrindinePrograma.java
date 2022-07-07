@@ -43,6 +43,16 @@ public class PagrindinePrograma {
         isvedaBruksniukus();
         System.out.println("t1.plotas() = " + t1.plotas());
         System.out.println("t2.plotas() = " + t2.plotas());
+
+        // Kitos dienos pavyzdys - su neigiamom kraštinėmis
+        isvedaBruksniukus();
+        Trikampis t3 = new Trikampis(-25, 40, -37);
+        System.out.println("t3 = " + t3);
+
+
+        isvedaBruksniukus();
+        Trikampis t4 = new Trikampis(10, 12, 15);
+        System.out.println("t4 = " + t4.isvestiPlotaPerimetra());
     }
 
 

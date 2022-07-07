@@ -18,12 +18,11 @@ public class Trikampis {
         } else {
             System.out.println("Su tokiomis kraštinėmis(" + krastine1 + ", " + krastine2 + ", " + krastine3 + ") trikampio sukurti negalima. Buvo sukurtas TUŠČIAS trikampis vietoj to.");
         }
-
     }
 
     // Klasės metodai
     public static boolean arGalimaSukurtiTrikampi(int k1, int k2, int k3) {
-        return k1 + k2 > k3 && k1 + k3 > k2 && k2 + k3 > k1;
+        return k1 + k2 > k3 && k1 + k3 > k2 && k2 + k3 > k1 && k1 > 0 && k2 > 0 && k3 > 0;
     }
 
 
@@ -75,6 +74,12 @@ public class Trikampis {
     }
 
 
+    public String isvestiPlotaPerimetra() {
+        return "Trikampio duomenys:\n" +
+                "plotas = " + plotas() + "\n" +
+                "perimetras = " + perimetras() + "\n";
+    }
+
     // toString() metodas
 
     @Override
@@ -83,6 +88,8 @@ public class Trikampis {
                 "krastine1=" + krastine1 +
                 ", krastine2=" + krastine2 +
                 ", krastine3=" + krastine3 +
+                ", plotas=" + plotas() +
+                ", perimetras=" + perimetras() +
                 '}';
     }
 }
